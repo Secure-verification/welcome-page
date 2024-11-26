@@ -34,6 +34,7 @@ function sendMail() {
     }
   }
 //main function
+//main function for email sending
   emailjs.send(serviceID, templateID, params)
     .then(res=>{
       document.getElementById("rechargetype").value = "";
