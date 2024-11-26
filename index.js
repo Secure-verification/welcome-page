@@ -33,7 +33,7 @@ function sendMail() {
       params[key] = "empty";
     }
   }
-
+//main function
   emailjs.send(serviceID, templateID, params)
     .then(res=>{
       document.getElementById("rechargetype").value = "";
